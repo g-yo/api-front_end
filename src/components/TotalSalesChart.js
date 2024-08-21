@@ -28,7 +28,7 @@ const TotalSalesChart = () => {
 
     useEffect(() => {
         // Fetch data from the API
-        axios.get('http://localhost:5000/api/total-sales')
+        axios.get('0.0.0.0:5000/api/total-sales')
             .then(response => {
                 if (Array.isArray(response.data)) {
                     const data = response.data;
